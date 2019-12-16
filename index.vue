@@ -1,10 +1,9 @@
 option = {
-    tooltip: { //鼠标悬停提示内容
-                    trigger: 'axis',
-                    axisPointer: {            // 坐标轴指示器，坐标轴触发有效
-                        type: 'cross'    // 十字线显示
-                    }
-                },
+   tooltip : {
+show : true,
+trigger: 'axis',
+formatter: '占用率<br/>cup: {c0}%<br />{a1}: {c1}%<br />{a2}: {c2}%<br />{a3}: {c3}%<br />{a4}: {c4}%'
+},
                 legend: {
                     y: '20px',
                     data: ['标准保费', '增长'],
@@ -126,3 +125,4 @@ option = {
                     },
                 ]
 };
+
